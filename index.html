@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="general.css" />
+		<link rel="stylesheet" href="queries.css" />
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script src="script.js" defer></script>
+		<title>World Wrestling Entertainment</title>
+	</head>
+	<body>
+		<main>
+			<header class="header">
+				<img src="img/wwe_logo.svg" alt="WWE Logo" />
+				<div class="nav-head">
+					<div class="header-text">WWE NETWORK</div>
+					<div class="header-text">SHOWS</div>
+					<div class="header-text">SUPERSTARS</div>
+					<div class="header-text">TICKETS</div>
+					<div class="header-text">SHOP</div>
+				</div>
+				<img
+					src="img/wwe-peacock.png"
+					class="wwe-peacock"
+					alt="WWE & Peacock Logo"
+				/>
+				<div class="line"></div>
+				<ion-icon name="search-outline" class="search-logo"></ion-icon>
+			</header>
+			<!-- <div class="media-container">
+				<div class="media-scroller">
+					<div class="media-group" id="group-1">
+						<p class="highlights-txt">WWE NXT highlights: Oct 11, 2022</p>
+						<a class="previous" href="#group-3">
+							<svg>
+								<use href="#previous"></use>
+							</svg>
+						</a>
+						<p class="highlights-box"></p>
+						<div class="media-element">
+							<img
+								src="img/carousel/1-img.jpg"
+								class="carousel-img"
+								alt="First Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<div class="media-element">
+							<img
+								src="img/carousel/2-img.jpg"
+								class="carousel-img"
+								alt="Second Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<div class="media-element">
+							<img
+								src="img/carousel/3-img.jpg"
+								class="carousel-img"
+								alt="Third Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<div class="media-element">
+							<img
+								src="img/carousel/4-img.jpg"
+								class="carousel-img"
+								alt="Fourth Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<a class="next" href="#group-2">
+							<svg>
+								<use href="#next"></use>
+							</svg>
+						</a>
+						<p class="highlights"></p>
+					</div>
+					<div class="media-group" id="group-2">
+						<p class="highlights-txt">WWE NXT highlights: Oct 11, 2022</p>
+						<a class="previous" href="#group-1">
+							<svg>
+								<use href="#previous"></use>
+							</svg>
+						</a>
+						<p class="highlights-box"></p>
+						<div class="media-element">
+							<img
+								src="img/carousel/5-img.jpg"
+								class="carousel-img"
+								alt="Fifth Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<div class="media-element">
+							<img
+								src="img/carousel/6-img.jpg"
+								class="carousel-img"
+								alt="Sixth Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<div class="media-element">
+							<img
+								src="img/carousel/7-img.jpg"
+								class="carousel-img"
+								alt="Seventh Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<div class="media-element">
+							<img
+								src="img/carousel/8-img.jpg"
+								class="carousel-img"
+								alt="Eigth Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<a class="next" href="#group-3">
+							<svg>
+								<use href="#next"></use>
+							</svg>
+						</a>
+						<p class="highlights"></p>
+					</div>
+					<div class="media-group" id="group-3">
+						<p class="highlights-txt">WWE NXT highlights: Oct 11, 2022</p>
+						<a class="previous" href="#group-2">
+							<svg>
+								<use href="#previous"></use>
+							</svg>
+						</a>
+						<p class="highlights-box"></p>
+						<div class="media-element">
+							<img
+								src="img/carousel/1-img.jpg"
+								class="carousel-img"
+								alt="First Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<div class="media-element">
+							<img
+								src="img/carousel/2-img.jpg"
+								class="carousel-img"
+								alt="First Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<div class="media-element">
+							<img
+								src="img/carousel/3-img.jpg"
+								class="carousel-img"
+								alt="First Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<div class="media-element">
+							<img
+								src="img/carousel/4-img.jpg"
+								class="carousel-img"
+								alt="First Video"
+							/>
+							<div class="timer">7:20</div>
+						</div>
+						<p class="highlights"></p>
+					</div>
+					<svg>
+						<symbol id="next" viewBox="0 0 256 512">
+							<path
+								fill="white"
+								d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+							/>
+						</symbol>
+
+						<symbol id="previous" viewBox="0 0 256 512">
+							<path
+								fill="white"
+								d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+							/>
+						</symbol>
+					</svg>
+				</div>
+			</div> -->
+			<div class="container2">
+				<p class="txt">WWE NXT Highlights: Oct 25, 2022</p>
+				<button class="handle left-handle">
+					<div class="text">&#8249;</div>
+				</button>
+				<div class="new">
+					<div class="slider">
+						<img src="img/carousel/1-img.jpg" />
+						<img src="img/carousel/2-img.jpg" />
+						<img src="img/carousel/3-img.jpg" />
+						<img src="img/carousel/4-img.jpg" />
+						<img src="img/carousel/5-img.jpg" />
+						<img src="img/carousel/6-img.jpg" />
+						<img src="img/carousel/7-img.jpg" />
+						<img src="img/carousel/8-img.jpg" />
+						<img src="https://via.placeholder.com/290/00FF00?text=9" />
+						<img src="https://via.placeholder.com/290/00FF00?text=10" />
+						<img src="https://via.placeholder.com/290/00FF00?text=11" />
+						<img src="https://via.placeholder.com/290/00FF00?text=12" />
+						<img src="https://via.placeholder.com/290/00FF00?text=13" />
+						<img src="https://via.placeholder.com/290/00FF00?text=14" />
+						<img src="https://via.placeholder.com/290/00FF00?text=15" />
+					</div>
+				</div>
+				<button class="handle right-handle">
+					<div class="text">&#8250;</div>
+				</button>
+				<p class="txt-right"></p>
+			</div>
+			<section class="show-ad container no-margin">
+				<div class="raw-box">
+					<img src="img/raw_logo.png" class="raw-logo" />
+					<p class="raw-txt">Tonight at 8/7</p>
+					<img class="usa-logo" src="img/usa-logo-og.webp" />
+					<div class="triangle-topleft"></div>
+				</div>
+				<img src="img/wwe-raw.jpg" class="brock-ad" />
+				<div class="right-side">
+					<p class="raw-preview-txt">RAW PREVIEW FOR 10/17</p>
+					<p class="raw-preview">Brock Lesnar returns to Raw tonight!</p>
+					<div class="results-btn">
+						<a href="results" class="results">Results</a>
+						<a href="highlights" class="results">Watch highlights</a>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="three-img">
+					<div class="img-box">
+						<img
+							src="img/3-col/nxt1.jpg"
+							class="three-col-size"
+							alt="WWE NXT Roxanne Vs Rhea Ripley"
+						/>
+						<div class="timer new-color fix-position">2:52</div>
+						<div class="color-line"></div>
+						<p class="match-description">
+							Rhea Ripley brings The Judgement Day to NXT to battle Roxanne
+							Perez
+						</p>
+					</div>
+					<div class="img-box">
+						<img
+							src="img/3-col/nxt2.jpg"
+							class="three-col-size"
+							alt="WWE Smackdown Shinsuke Nakamura Vs Tony D'Angelo"
+						/>
+						<div class="timer new-color fix-position">2:47</div>
+						<div class="color-line"></div>
+						<p class="match-description">
+							Shinsuke Nakamura surprises "Stacks" on request of Tony D'Angelo
+						</p>
+					</div>
+					<div class="img-box">
+						<img
+							src="img/3-col/nxt3.jpg"
+							class="three-col-size"
+							alt="WWE RAW The O.C. and Cameron Grimes team up!"
+						/>
+						<div class="timer new-color">2:51</div>
+						<div class="color-line"></div>
+						<p class="match-description">
+							Cameron Grimes & The O.C. join forces to take on Schism
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="container-4">
+				<div class="trend">
+					<div class="trend-col">
+						<p class="trend-txt">Trending</p>
+						<p class="wwe-news">WWE NEWS</p>
+					</div>
+					<a href="More-WWE-News" class="more-trend">More WWE News</a>
+				</div>
+				<div class="trend-imgs">
+					<div class="img-box-2">
+						<a href="video1" class="video">
+							<img src="img/trend-img/trend1.jpg" class="trend-img" />
+							<picture role="img" class="video-link"> </picture>
+						</a>
+						<div class="txt-flex">
+							<a href="#" class="txt-top-ten">
+								Top 10 Raw moments: WWE Top 10, Oct. 17, 2022
+							</a>
+							<ion-icon name="share-outline" class="share-icon"></ion-icon>
+						</div>
+					</div>
+					<div class="img-box-2">
+						<a href="video2" class="video">
+							<img src="img/trend-img/trend2.jpg" />
+						</a>
+						<div class="txt-flex">
+							<a href="#" class="txt-top-ten">
+								What's streaming this week on Peacock and WWE Network
+							</a>
+							<ion-icon name="share-outline" class="share-icon"></ion-icon>
+						</div>
+					</div>
+					<div class="img-box-2">
+						<a href="video2" class="video">
+							<img src="img/trend-img/trend3.jpg" />
+						</a>
+						<div class="txt-flex">
+							<a href="#" class="txt-top-ten">
+								Shotzi and Quincy Elliott to co-host Halloween Havoc</a
+							>
+							<ion-icon name="share-outline" class="share-icon"></ion-icon>
+						</div>
+					</div>
+					<div class="img-box-2">
+						<a href="video4" class="video">
+							<img src="img/trend-img/trend4.jpg" />
+							<picture role="img" class="video-link"> </picture>
+						</a>
+						<div class="txt-flex">
+							<a href="#" class="txt-top-ten">
+								Roman Reigns will battle Logan Paul for the Undisputed WWE
+								Universal Title at WWE Crown Jewel</a
+							>
+							<ion-icon name="share-outline" class="share-icon"></ion-icon>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="wwe-post">
+				<div class="box-layout">
+					<div class="links-box">
+						<p class="raw-txt-post">RAW</p>
+						<div class="social-media-layout">
+							<ion-icon
+								name="logo-facebook"
+								class="media-logo fb-logo"
+							></ion-icon>
+							<ion-icon name="logo-twitter" class="media-logo"></ion-icon>
+							<ion-icon
+								name="share-outline"
+								class="share-icon red-color"
+							></ion-icon>
+						</div>
+					</div>
+					<div class="links-box">
+						<a href="match-post" class="match-description post-link">
+							John Cena & Roman Reigns vs. Randy Orton & Kane: Raw, June 30,
+							2014 (Full Match)
+						</a>
+					</div>
+					<div class="links-box match-img">
+						<img src="img/wwe-post/roman-cena.jpg" />
+					</div>
+				</div>
+			</section>
+			<section class="wwe-post">
+				<div class="box-layout">
+					<div class="links-box">
+						<p class="raw-txt-post">RAW</p>
+						<div class="social-media-layout">
+							<ion-icon
+								name="logo-facebook"
+								class="media-logo fb-logo"
+							></ion-icon>
+							<ion-icon name="logo-twitter" class="media-logo"></ion-icon>
+							<ion-icon
+								name="share-outline"
+								class="share-icon red-color"
+							></ion-icon>
+						</div>
+					</div>
+					<div class="links-box">
+						<a href="match-post" class="match-description post-link">
+							John Cena & Roman Reigns vs. Randy Orton & Kane: Raw, June 30,
+							2014 (Full Match)
+						</a>
+					</div>
+					<div class="links-box match-img">
+						<img src="img/wwe-post/roman-cena.jpg" />
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
