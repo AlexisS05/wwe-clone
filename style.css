@@ -271,9 +271,9 @@ body {
 }
 
 .txt {
-	color: black;
+	color: white;
 	z-index: 20;
-	background-color: gray;
+	background-color: black;
 	padding: 5rem 3rem;
 	text-align: center;
 	position: absolute;

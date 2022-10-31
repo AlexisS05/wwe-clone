@@ -13,6 +13,7 @@
 	.show-ad {
 		display: flex;
 		flex-direction: column;
+		margin-top: 0;
 	}
 
 	.brock-ad {
@@ -21,6 +22,20 @@
 	}
 
 	.raw-box {
+		width: 100%;
+	}
+
+	.raw-logo {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		height: 5rem;
+		width: 8rem;
+	}
+
+	.usa-logo,
+	.raw-txt,
+	.triangle-topleft {
 		display: none;
 	}
 
@@ -175,15 +190,28 @@
 
 	.container2 {
 		max-width: 100%;
+		overflow: hidden;
+	}
+
+	.txt {
+		top: -30%;
 	}
 
 	.slider {
+		overflow-x: scroll;
+		width: 25rem;
+		background-color: black;
+		margin-left: 17.5rem;
 	}
 
 	.slider > img {
-		max-width: 140%;
+		max-width: 60%;
 		aspect-ratio: 16/9;
 		padding: 0.25rem;
+	}
+
+	.handle {
+		display: none;
 	}
 
 	.txt-right {
