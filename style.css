@@ -141,12 +141,6 @@ p {
 	height: 15rem;
 }
 
-.timer {
-	font-size: 2rem;
-	position: absolute;
-	background-color: #fff;
-	top: 0;
-}
 
 .media-element > img {
 	/* width: 100%; */
@@ -200,6 +194,13 @@ body {
 	/* --slider-padding: 5rem; */
 }
 
+.timer {
+	font-size: 2rem;
+	position: absolute;
+	background-color: #fff;
+	top: 0;
+}
+
 .container2 {
 	display: flex;
 	justify-content: center;
@@ -207,6 +208,7 @@ body {
 	/* width: 100rem; */
 	max-width: 100%;
 	position: relative;
+	background-color: rgb(43, 43, 43);
 }
 
 .slider {
@@ -223,16 +225,16 @@ body {
 	max-width: 15%;
 	aspect-ratio: 16/9;
 	padding: 0.25rem;
-	/* border-radius: 1rem; */
 }
 
 .handle {
 	border: none;
 	/* border-radius: 1rem; */
 	flex-grow: 0;
-	background-color: rgba(0, 0, 0, 0.25);
+	/* background-color: rgba(0, 0, 0, 0.25); */
+	background-color: rgb(43, 43, 43);
 	z-index: 10;
-	margin: 0.25rem 0;
+	margin: 0;
 	padding: 0 0.5rem;
 	cursor: pointer;
 	font-size: 4rem;
@@ -247,7 +249,7 @@ body {
 .left-handle {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-	margin-left: 20rem;
+	margin-left: 45rem;
 }
 
 .right-handle {
@@ -273,25 +275,28 @@ body {
 .txt {
 	color: white;
 	z-index: 20;
-	background-color: black;
+	background-color: rgb(43, 43, 43);
 	padding: 5rem 3rem;
 	text-align: center;
 	position: absolute;
 	left: 0;
-	width: 15rem;
+	width: 45rem;
+	padding-left: 20rem;
 	top: -12%;
+	font-size: 2rem;
 }
 
 .txt-right {
 	color: black;
 	z-index: 20;
-	background-color: gray;
+	background-color: rgb(43, 43, 43);
 	padding: 2.9rem 3rem;
 	text-align: center;
 	position: absolute;
 	right: 0;
 	width: 15rem;
 	top: -12%;
+	height: 12rem;
 }
 
 .txt-right {

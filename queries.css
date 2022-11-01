@@ -6,6 +6,17 @@
 		display: none;
 	}
 
+	.header {
+		margin: 0;
+		gap: 5rem;
+		max-width: 100%;
+		justify-content: space-between;
+	}
+
+	.line {
+		display: none;
+	}
+
 	.nav-head {
 		display: none;
 	}
@@ -125,8 +136,7 @@
 
 	.three-col-size {
 		width: 18rem;
-		max-width: fit-content;
-		height: fit-content;
+		height: 12rem;
 	}
 	.match-description {
 		font-size: 1.2rem;
@@ -194,7 +204,11 @@
 	}
 
 	.txt {
-		top: -30%;
+		width: 15rem;
+		padding: 5rem 1rem;
+		font-size: 1.2rem;
+		top: -35%;
+		font-weight: 600;
 	}
 
 	.slider {
@@ -230,8 +244,8 @@
 	}
 
 	.icon-mobile-nav {
-		height: 5rem;
-		width: 5rem;
+		height: 3.5rem;
+		width: 4rem;
 	}
 
 	.nav-head {
