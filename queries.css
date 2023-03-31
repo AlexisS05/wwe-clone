@@ -2,6 +2,10 @@
 	body {
 		overflow-x: hidden;
 	}
+
+	html {
+		overflow-x: hidden;
+	}
 	svg {
 		display: none;
 	}
@@ -203,23 +207,23 @@
 		overflow: hidden;
 	}
 
-	.txt {
+	/* .txt {
 		width: 15rem;
 		padding: 5rem 1rem;
 		font-size: 1.2rem;
 		top: -35%;
 		font-weight: 600;
-	}
+	} */
 
-	.slider {
+	.slider5 {
 		overflow-x: scroll;
-		width: 25rem;
+		width: 140rem;
 		background-color: black;
-		margin-left: 17.5rem;
+		margin-left: -1rem;
 	}
 
-	.slider > img {
-		max-width: 60%;
+	.slider5 > img {
+		max-width: 120%;
 		aspect-ratio: 16/9;
 		padding: 0.25rem;
 	}
@@ -283,6 +287,31 @@
 	}
 
 	.nav-open .icon-mobile-nav[name='menu-outline'] {
+		display: none;
+	}
+
+	.box {
+		display: none;
+	}
+	.box-right {
+		display: none;
+	}
+
+	.slider__btn {
+		display: none;
+	}
+
+	.wwe-txt {
+		width: 15rem;
+		height: 15rem;
+		font-size: 1.4rem;
+		position: sticky;
+		margin-left: 1rem;
+		left: 0%;
+		z-index: 500;
+	}
+
+	.testimonial__photo:hover {
 		display: none;
 	}
 }

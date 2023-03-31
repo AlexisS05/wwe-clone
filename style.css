@@ -313,7 +313,7 @@ body {
 	background-color: #333;
 	position: absolute;
 	z-index: 10;
-	top: 11.5%;
+	top: 9.7%;
 }
 .slider5 {
 	max-width: 150em;
@@ -432,6 +432,7 @@ body {
 
 .box-right {
 	right: 0;
+	top: 9.7%;
 	width: 18.3rem;
 }
 /*///////////////////
