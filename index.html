@@ -9,15 +9,27 @@
 		<link rel="stylesheet" href="queries.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+		></script>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
 		></script>
-		<script src="script.js" defer></script>
+
+		<script defer src="script.js"></script>
 		<title>World Wrestling Entertainment</title>
 	</head>
 	<body>
@@ -43,358 +55,175 @@
 				<div class="line"></div>
 				<ion-icon name="search-outline" class="search-logo"></ion-icon>
 			</header>
-			<!-- <div class="media-container">
-				<div class="media-scroller">
-					<div class="media-group" id="group-1">
-						<p class="highlights-txt">WWE NXT highlights: Oct 11, 2022</p>
-						<a class="previous" href="#group-3">
-							<svg>
-								<use href="#previous"></use>
-							</svg>
-						</a>
-						<p class="highlights-box"></p>
-						<div class="media-element">
-							<img
-								src="img/carousel/1-img.jpg"
-								class="carousel-img"
-								alt="First Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<div class="media-element">
-							<img
-								src="img/carousel/2-img.jpg"
-								class="carousel-img"
-								alt="Second Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<div class="media-element">
-							<img
-								src="img/carousel/3-img.jpg"
-								class="carousel-img"
-								alt="Third Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<div class="media-element">
-							<img
-								src="img/carousel/4-img.jpg"
-								class="carousel-img"
-								alt="Fourth Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<a class="next" href="#group-2">
-							<svg>
-								<use href="#next"></use>
-							</svg>
-						</a>
-						<p class="highlights"></p>
-					</div>
-					<div class="media-group" id="group-2">
-						<p class="highlights-txt">WWE NXT highlights: Oct 11, 2022</p>
-						<a class="previous" href="#group-1">
-							<svg>
-								<use href="#previous"></use>
-							</svg>
-						</a>
-						<p class="highlights-box"></p>
-						<div class="media-element">
-							<img
-								src="img/carousel/5-img.jpg"
-								class="carousel-img"
-								alt="Fifth Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<div class="media-element">
-							<img
-								src="img/carousel/6-img.jpg"
-								class="carousel-img"
-								alt="Sixth Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<div class="media-element">
-							<img
-								src="img/carousel/7-img.jpg"
-								class="carousel-img"
-								alt="Seventh Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<div class="media-element">
-							<img
-								src="img/carousel/8-img.jpg"
-								class="carousel-img"
-								alt="Eigth Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<a class="next" href="#group-3">
-							<svg>
-								<use href="#next"></use>
-							</svg>
-						</a>
-						<p class="highlights"></p>
-					</div>
-					<div class="media-group" id="group-3">
-						<p class="highlights-txt">WWE NXT highlights: Oct 11, 2022</p>
-						<a class="previous" href="#group-2">
-							<svg>
-								<use href="#previous"></use>
-							</svg>
-						</a>
-						<p class="highlights-box"></p>
-						<div class="media-element">
-							<img
-								src="img/carousel/1-img.jpg"
-								class="carousel-img"
-								alt="First Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<div class="media-element">
-							<img
-								src="img/carousel/2-img.jpg"
-								class="carousel-img"
-								alt="First Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<div class="media-element">
-							<img
-								src="img/carousel/3-img.jpg"
-								class="carousel-img"
-								alt="First Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<div class="media-element">
-							<img
-								src="img/carousel/4-img.jpg"
-								class="carousel-img"
-								alt="First Video"
-							/>
-							<div class="timer">7:20</div>
-						</div>
-						<p class="highlights"></p>
-					</div>
-					<svg>
-						<symbol id="next" viewBox="0 0 256 512">
-							<path
-								fill="white"
-								d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
-							/>
-						</symbol>
 
-						<symbol id="previous" viewBox="0 0 256 512">
-							<path
-								fill="white"
-								d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
-							/>
-						</symbol>
-					</svg>
+			<!-- <div class="box"></div> -->
+
+			<section class="blog-container" id="blog">
+				<div class="wwe-txt">WWE NXT Highlights: Oct 25, 2022</div>
+				<div class="blog-wrapper">
+					<div class="blog-box mySwiper">
+						<div class="blog-content swiper-wrapper">
+							<div class="blog-slide swiper-slide">
+								<a href="WWE" class="img-box">
+									<img src="img/carousel/1-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE2" class="img-box">
+									<img src="img/carousel/2-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE3" class="img-box">
+									<img src="img/carousel/3-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE4" class="img-box">
+									<img src="img/carousel/4-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE5" class="img-box">
+									<img src="img/carousel/5-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE6" class="img-box">
+									<img src="img/carousel/6-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE7" class="img-box">
+									<img src="img/carousel/7-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+							</div>
+							<div class="blog-slide swiper-slide">
+								<a href="WWE8" class="img-box">
+									<img src="img/carousel/8-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE" class="img-box">
+									<img src="img/carousel/1-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE2" class="img-box">
+									<img src="img/carousel/2-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE3" class="img-box">
+									<img src="img/carousel/3-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE4" class="img-box">
+									<img src="img/carousel/4-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE5" class="img-box">
+									<img src="img/carousel/5-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE6" class="img-box">
+									<img src="img/carousel/6-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+							</div>
+							<div class="blog-slide swiper-slide">
+								<a href="WWE7" class="img-box">
+									<img src="img/carousel/7-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE8" class="img-box">
+									<img src="img/carousel/8-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE" class="img-box">
+									<img src="img/carousel/1-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE2" class="img-box">
+									<img src="img/carousel/2-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE3" class="img-box">
+									<img src="img/carousel/3-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE4" class="img-box">
+									<img src="img/carousel/4-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+								<a href="WWE5" class="img-box">
+									<img src="img/carousel/5-img.jpg" alt="" class="wwe-photo" />
+									<p class="wwe-timer">01:50</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-btn swiper-button-next"></div>
+						<div class="swiper-btn swiper-button-prev"></div>
+					</div>
 				</div>
-			</div> -->
-			<!-- <div class="container2">
-				<p class="txt">WWE NXT Highlights: Oct 25, 2022</p>
-				<button class="handle left-handle">
-					<div class="text">&#8249;</div>
-				</button>
-				<div class="new">
-					<div class="slider">
-						<div>
-							<img src="img/carousel/1-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/2-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/3-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/4-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/5-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/6-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/7-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/8-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/1-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/1-img.jpg" />
-						</div>
-						<div>
-							<img src="img/carousel/1-img.jpg" />
+			</section>
+			<!-- <div class="box box-right"></div> -->
+
+			<section class="blog-container-mobile" id="blog">
+				<div class="wwe-txt-mobile">WWE NXT Highlights: Oct 25, 2022</div>
+				<div class="blog-wrapper-mobile">
+					<div class="blog-box-mobile mySwiper">
+						<div class="blog-content-mobile swiper-wrapper">
+							<div class="blog-slide-mobile swiper-slide">
+								<a href="WWE" class="img-box-mobile">
+									<img
+										src="img/carousel/1-img.jpg"
+										alt=""
+										class="wwe-photo-mobile"
+									/>
+									<p class="wwe-timer-mobile">01:50</p>
+								</a>
+								<a href="WWE" class="img-box-mobile">
+									<img
+										src="img/carousel/1-img.jpg"
+										alt=""
+										class="wwe-photo-mobile"
+									/>
+									<p class="wwe-timer-mobile">01:50</p>
+								</a>
+							</div>
+							<div class="blog-slide-mobile swiper-slide">
+								<a href="WWE4" class="img-box-mobile">
+									<img
+										src="img/carousel/2-img.jpg"
+										alt=""
+										class="wwe-photo-mobile"
+									/>
+									<p class="wwe-timer-mobile">01:50</p>
+								</a>
+								<a href="WWE" class="img-box-mobile">
+									<img
+										src="img/carousel/1-img.jpg"
+										alt=""
+										class="wwe-photo-mobile"
+									/>
+									<p class="wwe-timer-mobile">01:50</p>
+								</a>
+							</div>
+							<div class="blog-slide-mobile swiper-slide">
+								<a href="WWE4" class="img-box-mobile">
+									<img
+										src="img/carousel/3-img.jpg"
+										alt=""
+										class="wwe-photo-mobile"
+									/>
+									<p class="wwe-timer-mobile">01:50</p>
+								</a>
+								<a href="WWE" class="img-box-mobile">
+									<img
+										src="img/carousel/1-img.jpg"
+										alt=""
+										class="wwe-photo-mobile"
+									/>
+									<p class="wwe-timer-mobile">01:50</p>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<button class="handle right-handle">
-					<div class="text">&#8250;</div>
-				</button>
-				<p class="txt-right"></p>
-			</div> -->
-
-			<div class="box"></div>
-			<div class="slider5">
-				<p class="wwe-txt">WWE NXT Highlights: Oct 25, 2022</p>
-				<div class="slide slide--1">
-					<div class="testimonial">
-						<div class="testimonial__author">
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/1-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/2-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/3-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/4-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/5-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/6-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/7-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide slide--2">
-					<div class="testimonial">
-						<div class="testimonial__author">
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/1-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/1-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/1-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide slide--3">
-					<div class="testimonial">
-						<div class="testimonial__author">
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/1-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/1-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/1-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/1-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-							<a href="WWE" class="img-place">
-								<img
-									src="img/carousel/1-img.jpg"
-									alt=""
-									class="testimonial__photo"
-								/>
-								<p class="testimonial__name">01:50</p>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<button class="slider__btn slider__btn--left">&larr;</button>
-				<button class="slider__btn slider__btn--right">&rarr;</button>
-				<div class="dots"></div>
-			</div>
-			<div class="box box-right"></div>
+			</section>
 
 			<section class="show-ad container no-margin">
 				<div class="raw-box">
@@ -421,8 +250,8 @@
 							class="three-col-size"
 							alt="WWE NXT Roxanne Vs Rhea Ripley"
 						/>
-						<div class="timer new-color fix-position">2:52</div>
-						<div class="color-line"></div>
+						<picture role="img" class="video-link vid-mobile"> </picture>
+						<div class="timer">2:52</div>
 						<p class="match-description">
 							Rhea Ripley brings The Judgement Day to NXT to battle Roxanne
 							Perez
@@ -434,8 +263,8 @@
 							class="three-col-size"
 							alt="WWE Smackdown Shinsuke Nakamura Vs Tony D'Angelo"
 						/>
+						<picture role="img" class="video-link vid-mobile"> </picture>
 						<div class="timer new-color fix-position">2:47</div>
-						<div class="color-line"></div>
 						<p class="match-description">
 							Shinsuke Nakamura surprises "Stacks" on request of Tony D'Angelo
 						</p>
@@ -446,8 +275,8 @@
 							class="three-col-size"
 							alt="WWE RAW The O.C. and Cameron Grimes team up!"
 						/>
-						<div class="timer new-color">2:51</div>
-						<div class="color-line"></div>
+						<picture role="img" class="video-link vid-mobile"> </picture>
+						<div class="timer">2:51</div>
 						<p class="match-description">
 							Cameron Grimes & The O.C. join forces to take on Schism
 						</p>
