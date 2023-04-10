@@ -130,3 +130,21 @@ var swiper = new Swiper('.mySwiper', {
 		prevEl: '.swiper-button-prev',
 	},
 });
+
+const isChromeForIOs145 = () => {
+	const userAgent = window.navigator.userAgent;
+	const isChromeForIOs = /CriOS/i.test(userAgent);
+	if (isChromeForIOs) {
+		const iOsMatch = userAgent.match(
+			/(.+)(iPhone|iPad|iPod)(.+)OS[\s|\_](\d+)\_?(\d+)?[\_]?(\d+)?.+/i
+		);
+		if (iOsMatch && iOsMatch.length >= 6) {
+			const iOsVersionMajor = parseInt(iOsMatch[4], 10);
+			const iOsVersionMinor = parseInt(iOsMatch[5], 10);
+			if (iOsVersionMajor >= 14 && iOsVersionMinor >= 5) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
