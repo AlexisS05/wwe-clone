@@ -105,15 +105,15 @@
 	.img-box {
 		position: relative;
 		display: flex;
-		gap: 1.5rem;
+		gap: 1rem;
 		align-items: center;
-		margin-left: 2rem;
+		margin-left: 1.2rem;
 		border-bottom: 1px solid lightgrey;
 	}
 
 	.three-col-size {
 		width: 20rem;
-		height: 12rem;
+		height: 12.5rem;
 		border-bottom: 5px solid orange;
 	}
 
@@ -123,20 +123,17 @@
 		padding: 0.3rem 0.3rem;
 		font-weight: 600;
 		position: absolute;
-		top: 0%;
-		left: 0;
+		top: 4%;
+	}
+
+	.middle-timer {
+		top: 8%;
 	}
 	.match-description {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		width: 10rem;
 		margin-bottom: 3rem;
 	}
-	/* 
-	.container-4 {
-		display: flex;
-		flex-direction: column;
-	} */
-
 	.trend-imgs {
 		display: flex;
 		flex-direction: column;
