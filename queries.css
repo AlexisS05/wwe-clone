@@ -272,7 +272,7 @@
 
 	.vid-mobile::after {
 		background-image: url('https://www.wwe.com/a/i/video-icons/small-arrow-with-black.svg');
-		/* content: ''; */
+		content: '';
 		/* background-size: 64px 64px; */
 		background-repeat: no-repeat;
 		background-position: center;
@@ -473,27 +473,27 @@
 
 	.container {
 		display: flex;
-		justify-content: space-between;
 	}
 
 	.three-img {
-		display: flex;
+		display: flex !important;
 		flex-direction: column;
-		width: fit-content;
-		gap: 5rem;
 	}
 
 	.img-box {
 		position: relative;
-		display: flex;
+		display: flex !important;
+		flex-direction: row;
 		gap: 1rem;
-		/* align-items: center; */
-		margin-left: 1.2rem;
 		border-bottom: 1px solid lightgrey;
 	}
 
+	.img-box:last-child {
+		margin-left: 1.6rem;
+	}
+
 	.three-col-size {
-		width: 20rem;
+		width: 18rem;
 		height: 12.5rem;
 		border-bottom: 5px solid orange;
 	}
@@ -505,16 +505,18 @@
 		font-weight: 600;
 		position: absolute;
 		top: 0;
+		left: 0;
 	}
 
 	.match-description {
 		font-size: 1.4rem;
-		width: 10rem;
+		width: 12rem;
 		margin-bottom: 3rem;
 	}
 	.trend-imgs {
 		display: flex;
 		flex-direction: column;
+		border-bottom: 1px solid gray;
 	}
 
 	.box-layout {
@@ -522,22 +524,50 @@
 		flex-direction: column-reverse;
 		position: relative;
 		width: 100%;
+		gap: 0;
+		border-bottom: 1px solid gray;
 	}
 
 	.links-box {
 		display: flex;
 		flex-direction: column;
+		margin: 0;
 	}
 
-	.match-img {
+	.social-media-layout-raw:last-child {
+		display: none;
+	}
+
+	.share-icon {
+		display: block;
+		height: 3rem;
+		width: 3rem;
+		color: gray;
+	}
+
+	.new-link {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 0;
+	}
+
+	.social-media-layout:last-child {
+		margin-right: 2rem;
+		margin-top: 3rem;
+	}
+
+	.match-img img {
 		height: fit-content;
 		width: 100%;
 	}
 
 	.post-link {
 		letter-spacing: 0;
-		width: 25rem;
+		width: 35rem;
 		font-size: 2.4rem;
+		margin-left: 2rem;
 	}
 
 	.raw-txt-post {
@@ -649,18 +679,14 @@
 
 	.vid-mobile::after {
 		background-image: url('https://www.wwe.com/a/i/video-icons/small-arrow-with-black.svg');
-		/* content: ''; */
-		/* background-size: 64px 64px; */
+		content: '';
 		background-repeat: no-repeat;
 		background-position: center;
 		position: absolute;
 		top: 45%;
-		left: 30%;
+		left: 27%;
 		transform: translate(-50%, -50%);
-		/* padding: 9.6rem 18rem; */
-		/* background-color: #0969a5; */
 		z-index: 100;
-		/* padding-top: 10rem; */
 	}
 
 	.blog-container {
